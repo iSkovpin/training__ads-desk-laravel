@@ -25,6 +25,9 @@ assets-watch:
 queue:
 	docker-compose exec php-cli php artisan queue:work
 
+migrate:
+	docker-compose exec php-cli php artisan migrate
+
 horizon:
 	docker-compose exec php-cli php artisan horizon
 
